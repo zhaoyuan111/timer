@@ -92,7 +92,7 @@ def compute_total_finish_time(events, now=None):
     return total_time
 
 # --- Main page ---
-st.title("⏳ Event Timer")
+st.title("⏳ When can I go HOME?")
 
 if not st.session_state.events:
     st.info("Please add at least one event from the sidebar.")
@@ -175,6 +175,7 @@ else:
             f"<div style='font-size:28px; font-weight:bold; color:blue;'>{total_finish_time.strftime('%H:%M:%S')}</div>",
             unsafe_allow_html=True
         )
+
 
 
 
