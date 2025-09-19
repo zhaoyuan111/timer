@@ -1,6 +1,6 @@
 import streamlit as st
 import datetime
-from streamlit_autorefresh import st_autorefresh
+# from streamlit_autorefresh import st_autorefresh
 import pandas as pd
 
 st.set_page_config(page_title="When can I go HOME?", layout="centered")
@@ -175,4 +175,5 @@ else:
             f"<div style='font-size:28px; font-weight:bold; color:blue;'>{total_finish_time.strftime('%H:%M:%S')}</div>",
             unsafe_allow_html=True
         )
+
 
