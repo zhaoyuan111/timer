@@ -3,7 +3,7 @@ import datetime
 from streamlit_autorefresh import st_autorefresh
 import pandas as pd
 
-st.set_page_config(page_title="Event Timer", layout="centered")
+st.set_page_config(page_title="When can I go HOME?", layout="centered")
 
 # 自动刷新每秒
 st_autorefresh(interval=1000, key="timer")
@@ -175,3 +175,4 @@ else:
             f"<div style='font-size:28px; font-weight:bold; color:blue;'>{total_finish_time.strftime('%H:%M:%S')}</div>",
             unsafe_allow_html=True
         )
+
